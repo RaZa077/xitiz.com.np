@@ -168,7 +168,7 @@ body::before {
     transform: scale(1);
     width: 100vw;
     z-index: 0;
-    background-image: url(""), url("images/bg.jpg");
+    background-image: url(""), url("images/walla.jpg");
     background-size: 256px, cover;
     background-position: center center, center bottom;
     background-repeat: repeat, no-repeat;
