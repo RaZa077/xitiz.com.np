@@ -156,6 +156,13 @@ body {
     overflow-wrap: break-word;
 }
 
+.inner img{
+    border-radius: 50%;
+    height: 240px;
+    right: 90px;
+    position: absolute;
+}
+
 body::before {
     content: "";
     display: block;
@@ -285,7 +292,7 @@ a {
     position: relative;
     text-align: var(--alignment);
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.93);
+    background-color: rgba(255, 255, 255, 0.6);
     background-image: url("");
     background-size: 256px;
     background-position: center center;
@@ -305,6 +312,7 @@ a {
     width: var(--width);
     z-index: 1;
     padding: var(--padding-vertical) var(--padding-horizontal);
+    backdrop-filter: blur(15px);
 }
 
 #main>.inner>* {
