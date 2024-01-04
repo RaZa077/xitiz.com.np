@@ -1,0 +1,282 @@
+/* Student Name: Chhitiz Rai */
+/* Student ID: 2408057 */
+body {
+  color: white;
+  background-color: black;
+  background-image: url("https://github.com/RaZa077/Weather_hub/blob/main/images/bagg.jpg?raw=true");
+}
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the entire background */
+  z-index: -1; /* Places video behind other content */
+}
+.weather {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  /* background-color: black; */
+  width: 280px;
+  padding-left: 15px;
+  height: 70px;
+  font-size: 50px;
+  position: absolute;
+  padding-top: 5px;
+  left: 2px;
+  border-radius: 10px;
+}
+.hub {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: absolute;
+  color: black;
+  font-size: 50px;
+  top: 7px;
+  left: 200px;
+  background-color: orange;
+  border-radius: 5px;
+  padding: 1px;
+  padding-left: 4px;
+  padding-right: 5px;
+}
+.title {
+  font-family: initial;
+  left: 15%;
+  width: 70%;
+  height: 140px;
+  position: relative;
+  top: 40px;
+}
+.time {
+  font-size: 40px;
+  right: 92px;
+  position: absolute;
+}
+.date {
+  font-size: 30px;
+  right: 15px;
+  display: flex;
+  justify-content: right;
+  position: relative;
+}
+.container {
+  background-color: rgba(236, 236, 236, 0.2);
+  left: 10%;
+  height: 800px;
+  width: 80%;
+  border-radius: 20px;
+  font-family: "Times New Roman", Times, serif;
+  position: relative;
+  color: white;
+  backdrop-filter: blur(15px);
+}
+.search input[type="text"]:focus {
+  border: none;
+  outline: none;
+}
+.search input {
+  border: none;
+  background: rgba(255, 255, 255, 0);
+}
+::placeholder {
+  text-align: center;
+  color: black;
+}
+.search {
+  background-color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  right: 100px;
+  top: 35px;
+  padding: 5px;
+  border-radius: 30px;
+}
+.search button:hover {
+  background-color: rgb(87, 105, 105);
+}
+.search button {
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 0;
+  border-radius: 100px;
+  padding: 5px;
+  padding-left: 5px;
+}
+.location {
+  font-size: 60px;
+  left: 100px;
+  top: 35px;
+  position: absolute;
+}
+.loc {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  padding: 20px;
+  padding-left: 20px;
+  font-size: 70px;
+  position: absolute;
+}
+.icon-location {
+  padding-top: 10px;
+  padding-right: 20px;
+  height: 110px;
+}
+.day {
+  font-size: 70px;
+  top: 120px;
+  left: 40px;
+  position: absolute;
+}
+.weather-details img {
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.2);
+  top: 180px;
+  border-radius: 25px;
+  right: 140px;
+  position: absolute;
+}
+.temperature {
+  font-size: 200px;
+  left: 270px;
+  top: 250px;
+  position: absolute;
+}
+.temperature span {
+  font-size: 80px;
+  left: 220px;
+  top: 30px;
+  position: absolute;
+}
+.values {
+  /* display: flex;
+justify-content: space-between;
+bottom: 15px;
+position: absolute;padding-left: 300px; */
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  font-weight: 600;
+  color: rgb(255, 254, 254);
+}
+.wind {
+  padding-left: 70px;
+}
+.ipressure {
+  padding-left: 70px;
+}
+.ihumi {
+  height: 120px;
+}
+.iwind {
+  height: 120px;
+}
+.ipressure {
+  height: 120px;
+}
+.stats {
+  font-size: 50px;
+  top: 13%;
+  left: 155px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: absolute;
+}
+.valu {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  position: absolute;
+  bottom: 15%;
+  left: 26%;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+.error {
+  color: rgb(206, 58, 58);
+  margin-top: 70px;
+  right: 140px;
+  font-size: 20px;
+  position: absolute;
+}
+footer p {
+  text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    width: 80%;
+    height: 1100px;
+  }
+
+  .stats {
+    left: 30%;
+  }
+  .location {
+    left: 11%;
+  }
+  .icon-location {
+    padding-top: 17px;
+    height: 100px;
+  }
+  .date,
+  .time {
+    font-size: 18xpx;
+  }
+  .weather-details img {
+    height: 300px;
+    padding-top: 50px;
+    padding-right: 80px;
+  }
+  .temperature {
+    top: 500px;
+    font-size: 200px;
+  }
+  .valu {
+    width: 80%;
+    left: 15%;
+    padding-bottom: 50px;
+    font-size: 20px;
+  }
+  .values {
+    width: 85%;
+    left: 5%;
+    height: 140px;
+    font-size: 20px;
+  }
+  .ihumi {
+    height: 60px;
+  }
+  .ipressure {
+    height: 90px;
+  }
+  .iwind {
+    height: 60px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .title {
+    flex-direction: column;
+  }
+  .icon-locaion {
+    height: 10px;
+  }
+
+  .date,
+  .time {
+    font-size: 15px;
+  }
+
+  .b2 {
+    font-size: 18px;
+  }
+
+  .imgg img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .ss {
+    width: 100%;
+  }
+}
