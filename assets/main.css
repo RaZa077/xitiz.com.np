@@ -156,13 +156,6 @@ body {
     overflow-wrap: break-word;
 }
 
-.inner img{
-    border-radius: 50%;
-    height: 240px;
-    right: 90px;
-    position: absolute;
-}
-
 body::before {
     content: "";
     display: block;
